@@ -9,9 +9,6 @@ class Forca {
     for (let i of this.palavraSecreta) {this.palavra.push("_")}
   }
 
-    // array(palavraSecreta.length).fill('_') comentei pq da outra forma fica melhor
-    //chutar que recebe o parametro letra, quero armazenar as letras chutadas, sempre q teclar uma letra a função chutar deve ser chamada
-
   chutar(letra) { 
     if(letra.length === 1 && this.palavraSecreta.includes(letra) == false && this.letrasChutadas.includes(letra) == false){
       this.letrasChutadas.push(letra);
